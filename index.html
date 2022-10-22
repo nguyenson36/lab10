@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIMETABLE</title>
+
+  <!-- logo -->
+  <link rel="icon" href="./assets/img/logo/logo_timetable.png" type="image/x-icon" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- trang chính -->
+  <div id="main">
+    <!-- navigation -->
+    <div id="header">
+      <nav class="navbar navbar-expand-lg" style="background-color: #dbf0ff;">
+        <div class="container-fluid">
+          <a class=" navbar-brand logo " href="./index.html">
+            <img src="./assets/img/logo/logo_timetable.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./content/classlist.html">DANH SÁCH LỚP HỌC
+                  PHẦN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./content/timetable.html">LỊCH HỌC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./content/finalexam.html">LỊCH THI</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-login float-right nav-item" role="button">
+              <i class="fas fa-sign-in-alt"></i>
+              LOGIN
+              </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- login -->
+    
+    <!-- noi dung -->
+    <div id="content-homepage">
+      <!-- greeting -->
+      <div class="greeting">
+        <!-- button -->
+        <a href="#galery-view" class="greating-btn">
+          <button class="cta">
+            Khám phá <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+        <!-- dong ho -->
+        <div id="digital-clock"></div>
+        <!-- chao ngay moi -->
+        <div class="greeting__title">chào ngày mới</div>
+        <!-- animation -->
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+
+
+      <!-- galery-view xem noi dung -->
+      <div id="galery-view">
+        <div class="galery-wrapper">
+          <h1 class="text-center mb-2 heading">CNTT3-K62</h1>
+          <h4 class="text-center mb-3 sub-heading ">THIS ONE FOR YOU !!!</h4>
+          <p class="text-center mb-4 text-description">Trang web này chúng tôi tạo ra nhằm mục đích cho các bạn sinh
+            viên lớp CNTT3-K62 theo dõi thời khoá biểu, lịch thi một cách dễ dàng nhất</p>
+          <div class="container">
+            <div class="row">
+              <!-- card 1 -->
+              <div class="col-md-4 py-1">
+                <div class="card shadow-sm">
+                  <a href="./content/classlist.html" class="card-link">
+                    <img src="./assets/img/galery_view/classlist.png" />
+                  </a>
+                  <div class="card-body">
+                    <h3>Danh sách lớp học phần</h3>
+                    <p class="text-justify">Những lớp học bạn sẽ tham gia trong kì thứ 3 này</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="./content/classlist.html">
+                      <button type="button" class="btn btn-primary">Xem</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="col-md-4 py-1">
+                <div class="card shadow-sm">
+                  <a href="./content/timetable.html" class="card-link">
+                    <img src="./assets/img/galery_view/timetable.jpg" />
+                  </a>
+                  <div class="card-body">
+                    <h3>lịch học </h3>
+                    <p class="text-justify">lịch học chi tiết từng tuần, sắp xếp theo những tháng riêng biệt</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="./content/timetable.html">
+                      <button type="button" class="btn btn-primary">Xem</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="col-md-4 py-1">
+                <div class="card shadow-sm">
+                  <a href="./content/finalexam.html" class="card-link">
+                    <img src="./assets/img/galery_view/finalexam.jpg" />
+                  </a>
+                  <div class="card-body">
+                    <h3>lịch thi</h3>
+                    <p class="text-justify">Lịch thi bạn phải tham gia để qua môn</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="./content/finalexam.html">
+                      <button type="button" class="btn btn-primary">Xem</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <section class="contact mb-4">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Liên Hệ Với Chúng Tôi</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+          Bạn có câu hỏi nào không? Xin đừng ngần ngại liên hệ trực tiếp với chúng tôi. Nhóm của chúng tôi sẽ quay trở
+          lại với bạn trong vòng vài giờ để giúp bạn
+        </p>
+
+        <div class="row">
+          <div class="col-md-9 mb-md-0 mb-5">
+
+
+            <!-- form  -->
+            <form id="contact-form" name="contact-form" >
+
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Name -->
+                  <div class="md-form mb-0">
+                    <label for="name" class="">Tên của bạn</label>
+                    <input type="text" id="name" required id="" class="form-control">
+                  </div>
+                </div>
+
+
+                <!-- email contact -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="email" class="">Email của bạn</label>
+                    <input type="email" id="email" name="email" required id="" class="form-control">
+                  </div>
+                </div>
+
+                <!-- address -->
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <label for="subject" class="">Địa Chỉ</label>
+                    <input type="text" id="subject" name="subject" required id="" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <!-- message  -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <label for="message">Tin nhắn</label>
+                    <textarea type="text" id="message" name="message" required id="" rows="2"
+                      class="form-control md-textarea"></textarea>
+                  </div>
+                </div>
+              </div>
+              <!-- submit -->
+              <div class="text-center text-md-left">
+                <input type="submit" class="btn btn-primary btn-submit"  value= "  Gửi  "  >
+                <!-- <a class="btn btn-primary btn-submit">Submit</a> -->
+              </div>
+            </form>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Giao+th%C3%B4ng+V%E1%BA%ADn+t%E1%BA%A3i/@21.0281545,105.8012318,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab424a50fff9:0xbe3a7f3670c0a45f!8m2!3d21.0281545!4d105.8034205?hl=vi-VN"
+                  style="text-decoration: none;">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Số 3 phố Cầu Giấy, Phường Láng Thượng, Quận Đống Đa, Hà Nội</p>
+
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:024 3766 3311" style="text-decoration: none;">
+                  <i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>(+84) 024 3766 3311</p>
+
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:dhgtvt@utc.edu.vn" style="text-decoration: none;">
+                  <i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>dhgtvt@utc.edu.vn</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+
+      <!-- footer chan trang -->
+      <footer class="footer bg-light text-center text-white">
+        <!-- image -->
+        <img src="./assets/img/footer/footer.jpg" alt="cover">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://www.facebook.com/"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="https://twitter.com/"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="https://www.google.com/"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: Team 6 IT3-K62 ||
+          <a class="text" href="https://www.utc.edu.vn/" >University of Transport and Communications</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- thong tin -->
+      <div class="scroller">
+        <marquee loop>đây là trang web xem thời khoá biểu của lớp CNTT3-K62 trường đại học
+          giao thông vận tải hà nội. Thực hiện bởi Đặng Minh Hà, Nguyễn Hồng
+          Sơn, Chu Ngọc Anh và Hoàng Văn Hùng. xem thêm thông tin chi tiết tại
+          đây
+        </marquee>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- javascript -->
+<script src="./assets/script/main.js"></script>
+<script src="./assets/script/jquery-3.2.1.min.js"></script>
+<script src="./assets/script/contact.js"></script>
+<!-- sweetalert -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- chatbot -->
+<script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=634627a46e04ae604e62e9a5"
+  async="async"></script>
+
+</html>

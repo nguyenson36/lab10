@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Lớp Học Phần</title>
+
+    <!-- logo -->
+    <link rel="icon" href="../assets/img/logo/logo_timetable.png" type="image/x-icon" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/content_css/classlist.css" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <div id="header">
+        <nav class="navbar navbar-expand-lg" style="background-color: #dbf0ff;">
+            <div class="container-fluid">
+                <a class=" navbar-brand logo " href="../index.html">
+                    <img src="../assets/img/logo/logo_timetable.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./classlist.html">DANH SÁCH LỚP HỌC
+                                PHẦN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./timetable.html">LỊCH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./finalexam.html">LỊCH THI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="content col-md-5 bgr" style="margin-top:50px; padding: 20px; width:100%">
+        <!-- bookmark -->
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html"
+                        style="text-decoration: none; color:#0000008C;">Trang Chủ</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page" style="color:#000000E6;">Danh Sách Lớp Học
+                    Phần</li>
+            </ol>
+        </nav>
+        <div>
+            <div style="margin-bottom: 20px; text-align: center;">
+                <div style="display:inline-flex; margin-bottom: 10px;">
+                    <div class="btn-group" style="display:block; margin-right:100px;">
+                        <small>Chọn Lớp:</small><br>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            K63
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">K63</a></li>
+                            <li><a class="dropdown-item" href="#">K62</a></li>
+                            <li><a class="dropdown-item" href="#">K61</a></li>
+                            <li><a class="dropdown-item" href="#">K60</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" style="display:inline-block; margin-right:100px;">
+                        <small style="display:inline-block;">Học Kì:</small><br>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Học kì 1
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Học kì 1</a></li>
+                            <li><a class="dropdown-item" href="#">Học kì 2</a></li>
+                            <li><a class="dropdown-item" href="#">Học kì 3</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li> -->
+                            <li><a class="dropdown-item" href="#">Học kì 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" style="display:block;">
+                        <small>Đợt Học:</small><br>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            1
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div style="display:inline-flex">
+                            <div style="display:block; margin-right:50px;">
+                                <input class="form-control" type="text" placeholder="Nhấn Để Tìm Kiếm"
+                                    aria-label="default input example" style="border-color: #3DD5F3;">
+                            </div>
+                            <div style="display:block; padding-left:50px;">
+                                <button type="button" class="btn btn-outline-info"><i class="fas fa-search"></i> Tìm Kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- table -->
+        <div class="table-responsive">
+            <table class="table container table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-md-1">Thứ Tự</th>
+                        <th class="col-md-2">Mã Lớp</th>
+                        <th class="col-md-3">Tên Lớp</th>
+                        <th class="col-md-2">Bộ Môn</th>
+                        <th class="col-md-2">Khoa</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr class="subject subject-1">
+                        <td>1</td>
+                        <td>IT1.109.3-1-1-22 (N17)</td>
+                        <td>Cấu trúc dữ liệu và giải thuật-1-1-22 (N17)</td>
+                        <td>Khoa học máy tính</td>
+                        <td>Khoa Công nghệ thông tin</td>
+                    </tr>
+                    <tr class="subject subject-2">
+                        <td>2</td>
+                        <td>IT1.107.3-1-1-22 (N09)</td>
+                        <td>Kiến trúc và tổ chức máy tính-1-1-22 (N09)</td>
+                        <td>Mạng và HTTT</td>
+                        <td>Khoa Công nghệ thông tin</td>
+                    </tr>
+                    <tr class="subject subject-3">
+                        <td>3</td>
+                        <td>IT1.108.3-1-1-22 (N07)</td>
+                        <td>Lập trình hướng đối tượng-1-1-22 (N07)</td>
+                        <td>Công nghệ phần mềm</td>
+                        <td>Khoa Công nghệ thông tin</td>
+                    </tr>
+                    <tr class="subject subject-4">
+                        <td>4</td>
+                        <td>IT1.106.3-1-1-22 (N09)</td>
+                        <td>Thiết kế Web-1-1-22 (N09)</td>
+                        <td>Mạng và HTTT</td>
+                        <td>Khoa Công nghệ thông tin</td>
+                    </tr>
+                    <tr class="subject subject-5">
+                        <td>5</td>
+                        <td>IT1.105.3-1-1-22 (N06)</td>
+                        <td>Toán rời rạc-1-1-22 (N06)</td>
+                        <td>Khoa học máy tính</td>
+                        <td>Khoa Công nghệ thông tin</td>
+                    </tr>
+                    <tr class="subject subject-6">
+                        <td>6</td>
+                        <td>PS0.005.2-1-1-22 (N45)</td>
+                        <td>Tư tưởng Hồ Chí Minh-1-1-22 (N45)</td>
+                        <td>Tư tưởng HCM</td>
+                        <td>Khoa Lý luận Chính trị</td>
+                    </tr>
+                    <tr class="subject subject-7">
+                        <td>7</td>
+                        <td>PS0.005.2-1-1-22 (N45.TL1)</td>
+                        <td>Tư tưởng Hồ Chí Minh-1-1-22 (N45.TL1)</td>
+                        <td>Tư tưởng HCM</td>
+                        <td>Khoa Lý luận Chính trị</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+</body>
+<!-- script -->
+<script src="../assets/script/main.js"></script>
+<script src="../assets/script/jquery-3.2.1.min.js"> </script>
+<script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=634627a46e04ae604e62e9a5"
+    async="async"></script>
+
+</html>

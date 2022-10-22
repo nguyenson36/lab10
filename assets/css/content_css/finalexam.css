@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* cuộn chuột mượt */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* *********scrollbar thay doi cuon chuot******* */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(180, 192, 172);
+}
+
+/* *********HEADER********** */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1px;
+}
+
+.nav-item > a {
+  color: #4a494f;
+  font-size: 20px;
+}
+.nav-item > a:hover {
+  color: #000000;
+}
+/* nav animation */
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  border-radius: 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  width: 0;
+  scale: 50%;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* scale */
+div > nav > div > img {
+  width: 51px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+div > ul > li {
+  transition: 0.5s;
+}
+
+div > ul > li:hover {
+  scale: 110%;
+}
+
+ul > li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav > div > a {
+  transition: 0.5s;
+}
+
+nav > div > a:hover {
+  scale: 110%;
+}
+
+
+/* *************HẾT HEADER**************** */
+
+
+/* ************************************************ */
+/* NOI DUNG TRANG */
+/* ************************************************ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+.content {
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color: #A7A1AE;
+}
+
+
+table {
+  border-radius: 20px;
+}
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+.container td,
+.container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #EBEBEB;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+  background-color: #fff;
+}
+.container th {
+  background-color: #73EAD7;
+}
+
+/* .container td:first-child {
+  color: #FB667A;
+} */
+.container tr:nth-child(odd):hover td {
+  /* transition: 0.2s; */
+  background-color: #4E5066;
+  color: #fff; 
+}
+.container tr:nth-child(even):hover td {
+  background-color: #4E5066;
+  color: #fff; 
+}
+
+
