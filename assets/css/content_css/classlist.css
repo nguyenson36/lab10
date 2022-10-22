@@ -46,13 +46,6 @@ body {
 }
 
 /* *********HEADER********** */
-
-.btn-group>.btn-group:not(:first-child)>.btn,
-.btn-group>.btn:nth-child(n+3),
-.btn-group>:not(.btn-check)+.btn{
-  border-radius: 6px;
-}
-
 #header {
   position: fixed;
   top: 0;
@@ -60,19 +53,22 @@ body {
   right: 0;
   z-index: 100000;
 }
+
 .logo img {
   width: 30px;
   height: 30px;
   margin-bottom: 1px;
 }
 
-.nav-item > a {
+.nav-item>a {
   color: #4a494f;
   font-size: 20px;
 }
-.nav-item > a:hover {
+
+.nav-item>a:hover {
   color: #000000;
 }
+
 /* nav animation */
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -88,41 +84,41 @@ body {
   scale: 50%;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
+
 .nav-link:hover:after {
   width: 100%;
   left: 0;
 }
+
 /* scale */
-div > nav > div > img {
+div>nav>div>img {
   width: 51px;
   height: 70px;
   margin-right: 20px;
 }
 
-div > ul > li {
+div>ul>li {
   transition: 0.5s;
 }
 
-div > ul > li:hover {
+div>ul>li:hover {
   scale: 110%;
 }
 
-ul > li {
+ul>li {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-nav > div > a {
+nav>div>a {
   transition: 0.5s;
 }
 
-nav > div > a:hover {
+nav>div>a:hover {
   scale: 110%;
 }
 
-
 /* *************HẾT HEADER**************** */
-
 
 /* ************************************************ */
 /* NOI DUNG TRANG */
@@ -135,17 +131,30 @@ nav > div > a:hover {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.42em;
-  color: #A7A1AE;
+  color: #a7a1ae;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n + 3),
+.btn-group> :not(.btn-check)+.btn {
+  border-radius: 8px;
 }
 
 /* mai son chinh */
 table {
   border-radius: 20px;
 }
-
 
 .container {
   text-align: center;
@@ -155,6 +164,7 @@ table {
   display: table;
   padding: 0 0 8rem 0;
 }
+
 .container td,
 .container th {
   padding-bottom: 2%;
@@ -164,15 +174,16 @@ table {
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
   background-color: #fff;
 }
+
 .container th {
-  background-color: #73EAD7;
+  background-color: #73ead7;
 }
 
 /* .container td:first-child {
@@ -180,12 +191,17 @@ table {
 } */
 .container tr:nth-child(odd):hover td {
   /* transition: 0.2s; */
-  background-color: #4E5066;
-  color: #fff; 
+  background-color: #4e5066;
+  color: #fff;
 }
+
 .container tr:nth-child(even):hover td {
-  background-color: #4E5066;
-  color: #fff; 
+  background-color: #4e5066;
+  color: #fff;
 }
 
-
+@media (max-width: 414px) {
+  .btn-group {
+    margin: 0 10px;
+  }
+}

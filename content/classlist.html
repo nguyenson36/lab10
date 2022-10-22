@@ -22,10 +22,10 @@
 <body>
     <!-- navigation -->
     <div id="header">
-        <nav class="navbar navbar-expand-lg" style="background-color: #dbf0ff;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #dbf0ff">
             <div class="container-fluid">
-                <a class=" navbar-brand logo " href="../index.html">
-                    <img src="../assets/img/logo/logo_timetable.png" alt="">
+                <a class="navbar-brand logo" href="../index.html">
+                    <img src="../assets/img/logo/logo_timetable.png" alt="" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -38,8 +38,7 @@
                             <a class="nav-link" aria-current="page" href="../index.html">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./classlist.html">DANH SÁCH LỚP HỌC
-                                PHẦN</a>
+                            <a class="nav-link" aria-current="page" href="./classlist.html">DANH SÁCH LỚP HỌC PHẦN</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./timetable.html">LỊCH HỌC</a>
@@ -52,25 +51,31 @@
             </div>
         </nav>
     </div>
-    
-    <div class="content col-md-5 bgr" style="margin-top:50px; padding: 20px; width:100%">
+
+    <div class="content col-md-5 bgr" style="margin-top: 50px; padding: 20px; width: 100%">
         <!-- bookmark -->
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-            aria-label="breadcrumb">
+        <nav style="
+          --bs-breadcrumb-divider: url(
+            &#34;data:image/svg + xml,
+            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+          );
+        " aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../index.html"
-                        style="text-decoration: none; color:#0000008C;">Trang Chủ</a>
+                <li class="breadcrumb-item">
+                    <a href="../../index.html" style="text-decoration: none; color: #0000008c">Trang Chủ</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page" style="color:#000000E6;">Danh Sách Lớp Học
-                    Phần</li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: #000000e6">
+                    Danh Sách Lớp Học Phần
+                </li>
             </ol>
         </nav>
         <div>
-            <div style="margin-bottom: 20px; text-align: center;">
-                <div style="display:inline-flex; margin-bottom: 10px;">
-                    <div class="btn-group" style="display:block; margin-right:100px;">
-                        <small>Chọn Lớp:</small><br>
-                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <div style="margin-bottom: 20px; text-align: center">
+                <div style="display: inline-flex; margin-bottom: 10px">
+                    <div class="btn-group">
+                        <small>Chọn Lớp:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle test" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             K63
                         </button>
                         <ul class="dropdown-menu">
@@ -80,9 +85,10 @@
                             <li><a class="dropdown-item" href="#">K60</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group" style="display:inline-block; margin-right:100px;">
-                        <small style="display:inline-block;">Học Kì:</small><br>
-                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="btn-group">
+                        <small>Học Kì:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Học kì 1
                         </button>
                         <ul class="dropdown-menu">
@@ -95,9 +101,10 @@
                             <li><a class="dropdown-item" href="#">Học kì 4</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group" style="display:block;">
-                        <small>Đợt Học:</small><br>
-                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="btn-group">
+                        <small>Đợt Học:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             1
                         </button>
                         <ul class="dropdown-menu">
@@ -110,13 +117,15 @@
                 </div>
                 <div>
                     <div>
-                        <div style="display:inline-flex">
-                            <div style="display:block; margin-right:50px;">
+                        <div style="display: inline-flex">
+                            <div style="display: block; margin-right: 50px">
                                 <input class="form-control" type="text" placeholder="Nhấn Để Tìm Kiếm"
-                                    aria-label="default input example" style="border-color: #3DD5F3;">
+                                    aria-label="default input example" style="border-color: #3dd5f3" />
                             </div>
-                            <div style="display:block; padding-left:50px;">
-                                <button type="button" class="btn btn-outline-info"><i class="fas fa-search"></i> Tìm Kiếm</button>
+                            <div style="display: block; padding-left: 50px">
+                                <button type="button" class="btn btn-outline-info">
+                                    <i class="fas fa-search"></i> Tìm Kiếm
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -136,7 +145,6 @@
                         <th class="col-md-2">Khoa</th>
                     </tr>
                 </thead>
-
 
                 <tbody>
                     <tr class="subject subject-1">
@@ -192,12 +200,10 @@
             </table>
         </div>
     </div>
-    
-
 </body>
 <!-- script -->
 <script src="../assets/script/main.js"></script>
-<script src="../assets/script/jquery-3.2.1.min.js"> </script>
+<script src="../assets/script/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=634627a46e04ae604e62e9a5"
     async="async"></script>
 
