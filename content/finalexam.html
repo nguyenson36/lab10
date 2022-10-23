@@ -57,52 +57,69 @@
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../index.html"
+                <li class="breadcrumb-item"><a href="../index.html"
                         style="text-decoration: none; color:#0000008C;">Trang Chủ</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page" style="color:#000000E6;">Lịch Thi</li>
             </ol>
         </nav>
         <div>
-            <div style="margin-bottom: 20px;">
-                <div style="display:inline-flex; margin-bottom: 10px;">
-                    <div style="display:block; margin-right:100px;">
-                        <small>Chọn Lớp:</small><br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">K63</option>
-                            <option value="2">K62</option>
-                            <option value="3">K61</option>
-                            <option value="4">K60</option>
-                        </select>
+            <div style="margin-bottom: 20px; text-align: center">
+                <div style="display: inline-flex; margin-bottom: 10px">
+                    <div class="btn-group">
+                        <small>Chọn Lớp:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle test" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            K63
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">K63</a></li>
+                            <li><a class="dropdown-item" href="#">K62</a></li>
+                            <li><a class="dropdown-item" href="#">K61</a></li>
+                            <li><a class="dropdown-item" href="#">K60</a></li>
+                        </ul>
                     </div>
-                    <div style="display:block; margin-right:100px;">
-                        <small>Học Kì:</small><br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">Học kì 1</option>
-                            <option value="1">Học kì 2</option>
-                            <option value="2">Học kì 3</option>
-                            <option value="2">Học kì 4</option>
-                        </select>
+                    <div class="btn-group">
+                        <small>Học Kì:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Học kì 1
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Học kì 1</a></li>
+                            <li><a class="dropdown-item" href="#">Học kì 2</a></li>
+                            <li><a class="dropdown-item" href="#">Học kì 3</a></li>
+                            <!-- <li>
+                                        <hr class="dropdown-divider">
+                                    </li> -->
+                            <li><a class="dropdown-item" href="#">Học kì 4</a></li>
+                        </ul>
                     </div>
-                    <div style="display:block;">
-                        <small>Đợt Học:</small><br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                            <option value="2">3</option>
-                            <option value="2">4</option>
-                        </select>
+                    <div class="btn-group">
+                        <small>Đợt Học:</small>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            1
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <div style="display:inline-flex">
-                            <div style="display:block; margin-right:50px;">
+                        <div style="display: inline-flex">
+                            <div style="display: block; margin-right: 50px">
                                 <input class="form-control" type="text" placeholder="Nhấn Để Tìm Kiếm"
-                                    aria-label="default input example">
+                                    aria-label="default input example" style="border-color: #3dd5f3" />
                             </div>
-                            <div style="display:block;">
-                                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search"></i> Tìm Kiếm</button>
+                            <div style="display: block; padding-left: 50px">
+                                <button type="button" class="btn btn-outline-info">
+                                    <i class="fas fa-search"></i> Tìm Kiếm
+                                </button>
                             </div>
                         </div>
                     </div>

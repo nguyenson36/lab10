@@ -20,6 +20,41 @@
 </head>
 
 <body>
+  <!-- login -->
+  <div id="login-container">
+    <div class="login">
+      <div class="btn-close">
+      </div>  
+      <h1 class="text-center">Say Hello</h1>
+      <p class="text-center">Nhập mã sinh viên để trải nghiệm tốt nhất</p>
+  
+  
+      <form class="needs-validation" >
+          <div class="form-group was-validated">
+              <label class="form-label" for="Student-ID">Mã Sinh Viên</label>
+              <input class="form-control" type="number" id="Student-ID" required>
+              <div class="invalid-feedback">
+                  Vui lòng nhập mã sinh viên
+              </div>
+          </div>
+  
+          <div class="form-group was-validated">
+              <label class="form-label" for="password">Mật Khẩu</label>
+              <input class="form-control" type="password" id="password" required>
+              <div class="invalid-feedback">
+                  Vui lòng nhập mật khẩu 
+              </div>
+          </div>
+  
+          <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox" id="check">
+              <label  class="form-check-label" for="check">Nhớ Mật Khẩu</label>
+          </div>
+  
+          <input class="btn btn-success w-100" type="submit" name="" value="Đăng Nhập" >
+      </form>
+    </div>
+  </div>
   <!-- trang chính -->
   <div id="main">
     <!-- navigation -->
@@ -50,17 +85,18 @@
                 <a class="nav-link" href="./content/finalexam.html">LỊCH THI</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-login float-right nav-item" role="button">
+            <button class="btn float-right show-login">
               <i class="fas fa-sign-in-alt"></i>
               LOGIN
-              </a>
+            </button>
+            <!-- <a  class="btn btn-login float-right nav-item show-login" role="button">
+              <i class="fas fa-sign-in-alt"></i>
+              LOGIN
+              </a> -->
           </div>
         </div>
       </nav>
     </div>
-
-    <!-- login -->
-    
     <!-- noi dung -->
     <div id="content-homepage">
       <!-- greeting -->
@@ -331,11 +367,13 @@
   </div>
 </body>
 <!-- javascript -->
+<script src="./assets/script/login.js"></script>
 <script src="./assets/script/main.js"></script>
 <script src="./assets/script/jquery-3.2.1.min.js"></script>
 <script src="./assets/script/contact.js"></script>
 <!-- sweetalert -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- chatbot -->

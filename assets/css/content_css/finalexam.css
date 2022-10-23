@@ -164,7 +164,7 @@ table {
   background-color: #fff;
 }
 .container th {
-  background-color: #73EAD7;
+  background-color: #BBA9C9;
 }
 
 /* .container td:first-child {
@@ -180,4 +180,22 @@ table {
   color: #fff; 
 }
 
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 50px;
+}
 
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n + 3),
+.btn-group> :not(.btn-check)+.btn {
+  border-radius: 8px;
+}
+
+@media (max-width: 414px) {
+  .btn-group {
+    margin: 0 10px;
+  }
+}
